@@ -18,10 +18,10 @@ export const TicTacToGame = () => {
 
 	const playerMove = (state: TicTacToGameState, y: number, x: number) => {
 		if (state.board[y][x] !== '') {
-			//todo: throw error?
-			return;
+			return false;
 		}
 		state.board[y][x] = state.playerChar;
+		return true;
 	};
 
 	const computerMove = (state: TicTacToGameState) => {

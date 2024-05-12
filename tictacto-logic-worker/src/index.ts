@@ -29,7 +29,9 @@ export default {
 		} else if (data.payload.kind === 'player-move') {
 			let state = data.state!;
 			let game = TicTacToGame();
-			game.playerMove(state, data.payload.y, data.payload.x);
+			if (!game.playerMove(state, data.payload.y, data.payload.x)) {
+				return new Response(JSON.stringify(state));
+			}
 			game.evaluateBoard(state);
 			if (state.winner) {
 				return new Response(JSON.stringify(state));

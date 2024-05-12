@@ -27,7 +27,7 @@ export const TicTacToUi = () => {
 
 	const renderStartUi = () => {
 		return `<div id="game-cell-container">
-				START
+				<div>to start select your char</div>
 				<div>
 					<div onclick="start('x')">X</div>
 					<div onclick="start('o')">O</div>

@@ -33,6 +33,7 @@ export default async function (manager: Manager, _settings: ComponentSettings) {
 	})
 
 	manager.addEventListener("event", async (event) => {
+		console.log(event.payload)
 		if (event.payload.kind === "start") {
 			let state = await (
 				await manager.fetch("http://localhost:8787", {
