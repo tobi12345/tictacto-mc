@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"lib": ["esnext", "DOM"],
+		"target": "ES2022",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"strict": true,
+		"rootDir": "src",
+		"outDir": "dist",
+		"declaration": true,
+		"sourceMap": true
+	},
+	"include": ["./src"],
+	"compileOnSave": true
+}

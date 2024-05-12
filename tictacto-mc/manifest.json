@@ -1,0 +1,12 @@
+{
+	"name": "first-mc",
+	"namespace": "first-mc",
+	"description": "A Managed Component for making the internet better",
+	"icon": "assets/icon.svg",
+	"permissions": {
+		"provide_widget": {
+			"description": "Widgets are the essential part of this component",
+			"required": true
+		}
+	}
+}
